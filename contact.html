@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container my-5">
+    <h2>Contact Us</h2>
+    <form class="needs-validation" novalidate>
+        <!-- Name Field -->
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            <div class="invalid-feedback">
+                Please provide your name.
+            </div>
+        </div>
+
+        <!-- Email Field -->
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            <div class="invalid-feedback">
+                Please provide a valid email address.
+            </div>
+        </div>
+
+        <!-- Service Selection -->
+        <div class="mb-3">
+            <label for="service" class="form-label">Service</label>
+            <select class="form-select" id="service" required>
+                <option value="" selected disabled>Select a service</option>
+                <option value="customized-learning-programs">Customized Learning Programs</option>
+                <option value="academic-coaching">Academic Coaching</option>
+                <option value="special-education-support">Special Education Support</option>
+                <option value="college-and-career-counseling">College and Career Counseling</option>
+            </select>
+            <div class="invalid-feedback">
+                Please select a service.
+            </div>
+        </div>
+
+        <!-- Message Box -->
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+            <div class="invalid-feedback">
+                Please enter your message.
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</body>
+</html>
